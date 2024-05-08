@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: RedisTest
+  datasource:
+    url: jdbc:mysql://localhost:3306/binsoo_db
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    redis:
+      host: localhost
+      port: 6379
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+        web: DEBUG
